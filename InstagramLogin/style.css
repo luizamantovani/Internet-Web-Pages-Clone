@@ -1,0 +1,98 @@
+main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.main_top {
+    margin-top: 5px;
+    width: 350px;
+    height: 420px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgb(219, 219, 219);
+    text-align: center;
+}
+
+.main_botton {
+    display: flex;
+}
+
+.textBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+    
+}
+
+input{
+    width: 258px;
+    height: 36px;
+    box-sizing: border-box;
+    padding-top: 9px;
+    padding-left: 8px;
+    padding-bottom: 7px;
+    font-family: "Roboto", sans-serif;
+    font-size: 12px;
+    background-color: rgb(250, 250, 250);
+    border: 1px solid rgb(219, 219, 219);
+    outline: none;
+}
+.username {
+    position: relative;
+    margin-bottom: 10px;  
+}
+
+.password-container {
+    position: relative;
+  }
+
+  .password-input {
+    padding-right: 60px; /* Add space for the "Show" button */
+    margin-bottom: 10px;
+  }
+
+
+
+img {
+    margin-top: 24px;
+    margin-bottom: 18px;
+    width: 175px;
+    height: 51px;
+}    
+
+.show-password {
+    position: absolute;
+    top: 40%;
+    right: 10px;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color:  rgb(38, 38, 38);
+    font-size: 14px;
+    font-weight: 600;
+    font-family: "Roboto", sans-serif;
+    cursor: pointer;
+    display: none; /* Initially hide the button */
+}
+
+.show-password:hover{
+    color: rgb(219, 219, 219);
+}
+
+.loginBtn{
+    height: 32px;
+    width: 268px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    color: white;
+    background-color: rgba(76,181,249,255);
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    text-align: center;
+    margin-left: 40px;
+    margin-right: 40px;
+    padding: 0;
+}
