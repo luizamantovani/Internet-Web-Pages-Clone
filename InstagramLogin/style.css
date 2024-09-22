@@ -5,10 +5,12 @@ main {
 }
 
 .main_top {
-    margin-top: 5px;
+    margin-top: 3px;
+    margin-bottom: 8px;
     width: 350px;
     height: 420px;
     display: flex;
+    justify-content: center;
     flex-direction: column;
     border: 1px solid rgb(219, 219, 219);
     text-align: center;
@@ -16,6 +18,11 @@ main {
 
 .main_botton {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(219, 219, 219);
+    width: 350px;
+    height: 63px;
 }
 
 .textBox {
@@ -23,10 +30,10 @@ main {
     flex-direction: column;
     align-items: center;
     margin-bottom: 10px;
-    
+
 }
 
-input{
+input {
     width: 258px;
     height: 36px;
     box-sizing: border-box;
@@ -39,28 +46,30 @@ input{
     border: 1px solid rgb(219, 219, 219);
     outline: none;
 }
+
 .username {
     position: relative;
-    margin-bottom: 10px;  
+    margin-bottom: 10px;
 }
 
 .password-container {
     position: relative;
-  }
+}
 
-  .password-input {
-    padding-right: 60px; /* Add space for the "Show" button */
+.password-input {
+    padding-right: 60px;
+    /* Add space for the "Show" button */
     margin-bottom: 10px;
-  }
+}
 
 
 
 img {
-    margin-top: 24px;
+    margin-top: 8px;
     margin-bottom: 18px;
     width: 175px;
     height: 51px;
-}    
+}
 
 .show-password {
     position: absolute;
@@ -69,30 +78,193 @@ img {
     transform: translateY(-50%);
     background: none;
     border: none;
-    color:  rgb(38, 38, 38);
+    color: rgb(38, 38, 38);
     font-size: 14px;
     font-weight: 600;
     font-family: "Roboto", sans-serif;
     cursor: pointer;
-    display: none; /* Initially hide the button */
+    display: none;
+    /* Initially hide the button */
 }
 
-.show-password:hover{
+.show-password:hover {
     color: rgb(219, 219, 219);
 }
 
-.loginBtn{
+.loginBtn {
     height: 32px;
     width: 268px;
     border-radius: 10px;
     outline: none;
     border: none;
     color: white;
-    background-color: rgba(76,181,249,255);
+    background-color: rgba(76, 181, 249, 255);
     font-family: "Roboto", sans-serif;
     font-weight: 600;
     text-align: center;
     margin-left: 40px;
     margin-right: 40px;
     padding: 0;
+}
+
+.icon {
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+}
+
+.fPassword {
+    color: rgb(0, 55, 107);
+    font-family: "Roboto", sans-serif;
+    font-size: 12px;
+    text-decoration: none;
+    font-weight: 400;
+}
+
+.fLogin {
+    width: 268px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    margin-left: 40px;
+}
+
+.facebookLink {
+    color: #385185;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: "Roboto", sans-serif;
+    text-decoration: none;
+    text-align: center;
+    line-height: 18px;
+    align-self: center;
+}
+
+.orLine{
+    position: relative;
+    padding: 0 30px;
+}
+
+.orLine::before,
+.orLine::after {
+    content: '';
+    position: absolute;
+    top: 50%; /* Aligns the lines vertically centered */
+    width: 119px; /* Adjust the length of the lines */
+    height: 1px; /* Thickness of the lines */
+    background-color: rgb(219, 219, 219, 219); /* Color of the lines */
+}
+
+.orLine::before {
+    left: +40px; /* Position the left line */
+}
+
+.orLine::after {
+    right: +40px; /* Position the right line */
+}
+
+.or{
+    color: #737373;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.main_bottonP{
+    font-family: Arial, Helvetica, sans-serif;
+    color:  rgb(0, 0, 0);
+    font-size: 14px;
+    font-weight: 400;
+    margin-right: 5px;
+    text-align: center;
+}
+
+.main_bottonA{
+    text-decoration: none;
+    color: rgb(0, 149, 246);
+    color-scheme: light;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 18px;
+}
+
+.app{
+    width: 310;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+.googleImg{
+    width: 134.28px;
+    height: 40px;
+}
+
+.microsoftImg{
+    width: 110.77px;
+    height: 40px;
+}
+
+footer{
+    width: 100%; 
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    margin-top: 40px;
+}
+
+ul{
+    display: flex;
+    justify-content: center;
+}
+li{
+    display: inline;
+    margin-right: 4px;
+}
+
+.linkFooter{
+    font-size: 12px;
+    line-height: 18px;
+    margin-right: 5px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: rgb(115, 115, 115);
+}
+
+.lastLine{
+    margin-top: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.footerFlex{
+    display: flex;
+    justify-content: center;
+    width: 800px;
+    flex-wrap: wrap;
+}
+
+select{
+    border: none;
+    font-size: 12px;
+    line-height: 18px;
+    margin-right: 5px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: rgb(115, 115, 115);
+    width: 62px;
+    height: 16px;
+    font-weight: 400;
+    margin-right: 5px;
+}
+
+.copyright{
+    font-size: 12px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 16px;
+    color: rgb(115, 115, 115);
 }
